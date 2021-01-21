@@ -1,14 +1,19 @@
+
+
 <?php 
 
 
-
-
-
+if(isset($_POST["submit"])){
+    echo $_POST["nombre"];
+    echo $_POST["telefono"];
+    echo $_POST["email"];
+}
 
 
 
 
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +38,6 @@
 <?php include 'form.php';  ?>
 
 <?php include 'footer.php';  ?>
-
 
 
 </body>

@@ -1,12 +1,12 @@
 <div class="form__style_pizzaContent">
-<form action="pizzaretos.php" method="post">
+<form action="pizzaretos.php" method="POST">
 
 
 <fieldset>
 <legend><span class="number">1</span> Escogiendo tu Pizza</legend>
-<input type="text" name="campo1" placeholder="Nombre *">
-<input type="number" name="campo2" placeholder="Telefono *">
-<input type="email" name="campo3" placeholder="Email *">
+<input type="text" name="nombre" placeholder="Nombre *">
+<input type="number" name="telefono" placeholder="Telefono *">
+<input type="email" name="email" placeholder="Email *">
 
 <label for="job">Pizzas:</label>
 <select  name="campo4">
@@ -30,16 +30,15 @@
 </optgroup>
 </select>      
 </fieldset>
-<textarea name="field3"  placeholder="Tipo de pizza"></textarea>
 
 
 
 
 <fieldset>
 <legend><span class="number">2</span> Informacion Adicional</legend>
-<textarea name="field3" placeholder="Comentarios extras"></textarea>
+<textarea name="comentarios" placeholder="Comentarios"></textarea>
 </fieldset>
-<input type="submit" value="Ordenar" />
+<input type="submit" name="submit"value="Ordenar" />
 </form>
 </div>
 
