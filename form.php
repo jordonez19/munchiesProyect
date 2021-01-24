@@ -5,9 +5,9 @@
 <fieldset>
 <legend><span class="number">1</span> Escogiendo tu Pizza</legend>
 <input type="text" name="nombre" placeholder="Nombre *">
-<input type="number" name="telefono" placeholder="Telefono *">
+<input type="text" name="telefono" placeholder="Telefono *">
 <input type="email" name="email" placeholder="Email *">
-
+<!-- 
 <label for="job">Pizzas:</label>
 <select  name="campo4">
 
@@ -30,13 +30,14 @@
 </optgroup>
 </select>      
 </fieldset>
-
+ -->
 
 
 
 <fieldset>
 <legend><span class="number">2</span> Informacion Adicional</legend>
-<textarea name="comentarios" placeholder="Comentarios"></textarea>
+<textarea name=ingredientes
+" placeholder="Ingredientes"></textarea>
 </fieldset>
 <input type="submit" name="submit"value="Ordenar" />
 </form>
