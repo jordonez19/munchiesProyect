@@ -6,11 +6,11 @@
 	background-image: url(https://photoshop-kopona.com/uploads/posts/2018-02/1519019781_noise2_1.jpg)
  */
 
-.title__pizzaretos {
+ .title__pizzaretos {
     font-size: 2em;
     position: absolute;
-    margin: -16px 16%;
-    font-size: 30px;
+    margin: -28px 16%;
+    font-size: 37px;
     color: #1abc9c;
     font-weight: bold;
 	font-family: fantasy;
@@ -20,8 +20,8 @@
 .title__pizzaretos_2{
     font-size: 2em;
     position: absolute;
-    margin: -16px 80%;
-    font-size: 30px;
+    margin: -28px 80%;
+    font-size: 37px;
     color: #1abc9c;
     font-weight: bold;
     font-family: fantasy;
@@ -152,3 +152,25 @@ h1.header__title_box {
     margin: 0;
 }
 
+
+.black-text{
+	color: rgb(0, 0, 0) ;
+	font-weight: bold;
+}
+.red-text{
+    color: rgb(197, 7, 7) ;
+    font-weight: bold;
+}
+.input__form_checkBox{
+    margin: 3px 3px;
+}
+.imagen_logo {
+    border-style: none;
+    max-width: 100%;
+    position: absolute;
+    opacity: 0.1;
+    width: 100%;
+    margin: -136px 0;
+    height: 162%;
+    z-index: -1;
+}

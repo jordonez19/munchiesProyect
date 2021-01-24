@@ -1,1 +1,1 @@
-<h1 class="footer__copyright">Copyright Javier Pedraza</h1>
+<h1 class="footer__copyright">Copyright Javier OP</h1>
