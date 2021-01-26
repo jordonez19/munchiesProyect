@@ -100,10 +100,22 @@ $errors= array(
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--NO CACHE -->
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <!-- STYLES -->
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/css.css">
-    
+    <!-- ICONO PAGE -->    
+    <link rel="icon" href="images\logo.jpeg">
     <title>Monchie's</title>
+    <!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/eda781d397.js" crossorigin="anonymous"></script>
+
+    
+
 
 </head>
 
@@ -113,8 +125,53 @@ $errors= array(
 <!-- HEADER -->
 <?php include 'modelos\header.php';  ?>
 
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- BARRA DESPLEGABLE -->
+
+<?php include 'modelos\navbar.php';  ?>
+
+
+<!-- IMAGENES -->
+
+
+
+<div class="diapositiva__container">
+
+    <ul>
+        <li><img src="images\img1.jpeg" class="imagen_intermedia" alt=""></li>
+        <li><img src="images\img2.jpeg" class="imagen_intermedia"  >    </li>
+        <li><img src="images\img3.jpeg" class="imagen_intermedia"  >    </li>
+        <li><img src="images\img4.jpeg" class="imagen_intermedia"  >    </li>
+        <li><img src="images\img5.jpeg" class="imagen_intermedia"  >    </li>
+        <li><img src="images\img6.jpeg" class="imagen_intermedia"  >    </li>
+    </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 <!-- IMAGEN LOGO DE FONDO -->
-<img src="images\logo.jpeg" class="imagen_logo"alt="">
+<div class="img__logo_container"><img src="images\logo.jpeg" class="imagen_logo"alt=""></div>
 
 <!-- TITULO MUNCHIE'S COSTADO IZQUIERDO  -->
 <div class="title__munchies" ><h1>M <br> U<br>N<br>C<br>H<br>I<br>E<br>"<br>S</h1></div>
@@ -126,8 +183,9 @@ $errors= array(
 <div class="form__container__first">  <?php   include 'modelos\form.php';  ?>   </div>
 
 <!-- FOOTER -->
+<div>
 <?php include 'modelos\footer.php';  ?>
-
+</div>
 
 </body>
 

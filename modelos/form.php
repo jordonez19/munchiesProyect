@@ -8,7 +8,7 @@
 <!-- #1 TITULO PRIMER NUMERO Y DATOS DEL CLIENTE -->
 <legend><span class="number">1</span> Ordenando con Munchie's</legend>
 
-<div class="form__container_detos">
+<div class="form__container_datos">
         
         <div class="black-text"> <?php echo $labels["nombre"] ?>  </div>
         <div class="red-text"> <?php echo $errors["nombre"]. "<br>" ?>  </div>
@@ -21,17 +21,33 @@
         <div class="black-text"> <?php echo $labels["email"] ?>  </div>
         <div class="red-text"> <?php echo $errors["email"]. "<br>" ?>  </div>
         <input type="email" name="email" placeholder="Email *">
-</div>
+
 <!-- DATOS DEL PRODUCTO -->
 <div class="input__form__container_checkbox">
         
         <label style="font-size:larger; font-weight:bold;">Munchie's Meats</label>
-        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" >  Bacon </b>  </input><br>
-        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" > Carne de res lomo  </b>  </input><br>
-        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" > Carne de cerdo lomo  </b>  </input><br>
-        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" >  punta de anca </b>  </input><br>
-        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" > steak  </b>   </input><br>
-        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" >  Otra </b>  </input>
+        
+        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" >  Bacon </b><input type="checkbox"><b>1/4L</b></input>
+        <input type="checkbox">1/2L</input><input type="checkbox">1L</input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder; ; margin:6 0;"height: 32px;></input><br>
+
+        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" > Carne de res lomo  </b><input type="checkbox">1/4L</input>
+        <input type="checkbox">1/2L</input><input type="checkbox">1L</input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder ; margin:6 0; height: 32px;"></input>  </input><br>
+        
+
+        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" > Carne de cerdo lomo  </b><input type="checkbox">1/4L</input>
+        <input type="checkbox">1/2L</input><input type="checkbox">1L</input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder ; margin:6 0; height: 32px;"></input>  </input><br>
+        
+
+        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" >  punta de anca </b><input type="checkbox">1/4L</input>
+        <input type="checkbox">1/2L</input><input type="checkbox">1L</input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder;  margin:6 0; height: 32px;"></input>  </input><br>
+        
+
+        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" > steak  </b><input type="checkbox">1/4L</input>
+        <input type="checkbox">1/2L</input><input type="checkbox">1L</input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder;  margin:6 0; height: 32px;"></input>  </input><br>
+        
+
+        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" >  Otra </b><input type="checkbox">1/4L</input>
+        <input type="checkbox">1/2L</input><input type="checkbox">1L</input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder; margin:6 0; height: 32px;"></input> </input>
 </div>
 </fieldset>
 
@@ -47,6 +63,8 @@
 </div>
 
 <input type="submit" name="submit"value="Ordenar" />
+</div>
+
 </form>
 </div>
 
