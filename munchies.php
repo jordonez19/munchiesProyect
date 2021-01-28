@@ -63,9 +63,6 @@ $errors= array(
         
 //END OF THE POST
 
-
-
-
 ?>
 
 
@@ -73,7 +70,6 @@ $errors= array(
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--NO CACHE -->
@@ -89,8 +85,8 @@ $errors= array(
     <title>Monchie's</title>
     <!-- SCRIPTS -->
     <script src="https://kit.fontawesome.com/eda781d397.js" crossorigin="anonymous"></script>
-
 </head>
+
 <body >
     <div id="container">
         <!-- BARRA DESPLEGABLE -->
@@ -109,6 +105,7 @@ $errors= array(
                 <li><img src="images\img6.jpeg" class="img__slider">    </li>
             </ul>
         </div>
+        <div class="title__menunchies_h1"> <h1>MENUNCHIE'S</h1></div>
         <!-- MENUNCHIES -->
         <div class="container__model_menunchies"><?php include 'modelos\menunchies.php';  ?></div>
         <!-- IMAGEN LOGO DE FONDO -->
