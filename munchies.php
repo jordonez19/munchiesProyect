@@ -79,7 +79,7 @@ $errors= array(
     <meta http-equiv="Pragma" content="no-cache">
     <!-- STYLES -->
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/css.css3">
+    <link rel="stylesheet" href="css/css.css">
     <!-- ICONO PAGE -->    
     <link rel="icon" href="images\logo.jpeg">
     <title>Monchie's</title>
@@ -117,7 +117,10 @@ $errors= array(
         <!-- FORM CLIENTE -->
         <div class="form__container__first">  <?php   include 'modelos\form.php';  ?> </div>
         <!-- FOOTER -->
-        <div> <?php include 'modelos\footer.php'; ?> </div>
+        <div id="container__footer_b"> <?php include 'modelos\footer.php'; ?> </div>
+
+        <div class="copyright">Copyright: Javier OP</div><br><br><br><br>
+
     </div>
 </body>
 
