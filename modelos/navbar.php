@@ -10,8 +10,7 @@
     <li class="nav__li "> <i class="fas fa-dollar-sign"></i> <a href="#">precios </a> </li>
     <li class="nav__li "> <i class="fas fa-question-circle"></i> <a href="#">ayuda </a> </li>
 
-    <div id="icon__search" class="fas fa-search" type="submit"></div>
-    <input class="search_bar" type="text"> 
+
     
 </ul>
 

@@ -46,7 +46,7 @@ $errors= array(
         
             $nombre= htmlspecialchars($_POST["nombre"]);
             if(!preg_match("/^[a-zA-Z\s]+$/", $nombre)){
-            $errors["nombre"] = "<br> Nombre debe ser letras y espacios solamente!! <br>";
+            $errors["nombre"] = "<br> Nombre solo debe ser letras y espacios!! <br>";
             }
         }}
         
@@ -121,40 +121,33 @@ $errors= array(
 
 
 <body >
+<div id="container">
+<!-- BARRA DESPLEGABLE -->
+
+<?php include 'modelos\navbar.php';  ?>
+
 
 <!-- HEADER -->
 <?php include 'modelos\header.php';  ?>
 
 
 
-
-
-
-
-
-
-
-
-
-
-<!-- BARRA DESPLEGABLE -->
-
-<?php include 'modelos\navbar.php';  ?>
+<button class="button__push_here"></button>
 
 
 <!-- IMAGENES -->
 
 
 
-<div class="diapositiva__container">
+<div class="slider">
 
     <ul>
-        <li><img src="images\img1.jpeg" class="imagen_intermedia" alt=""></li>
-        <li><img src="images\img2.jpeg" class="imagen_intermedia"  >    </li>
-        <li><img src="images\img3.jpeg" class="imagen_intermedia"  >    </li>
-        <li><img src="images\img4.jpeg" class="imagen_intermedia"  >    </li>
-        <li><img src="images\img5.jpeg" class="imagen_intermedia"  >    </li>
-        <li><img src="images\img6.jpeg" class="imagen_intermedia"  >    </li>
+        <li><img src="images\img1.jpeg" class="img__slider" alt=""></li>
+        <li><img src="images\img2.jpeg" class="img__slider"  >    </li>
+        <li><img src="images\img3.jpeg" class="img__slider"  >    </li>
+        <li><img src="images\img4.jpeg" class="img__slider"  >    </li>
+        <li><img src="images\img5.jpeg" class="img__slider"  >    </li>
+        <li><img src="images\img6.jpeg" class="img__slider"  >    </li>
     </ul>
 </div>
 
@@ -163,7 +156,8 @@ $errors= array(
 
 
 
-
+<!-- MENUNCHIES -->
+<div class="container__model_menunchies"><?php include 'modelos\menunchies.php';  ?></div>
 
 
 
@@ -187,6 +181,7 @@ $errors= array(
 <?php include 'modelos\footer.php';  ?>
 </div>
 
+</div>
 </body>
 
 </html>
