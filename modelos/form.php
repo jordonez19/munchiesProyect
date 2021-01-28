@@ -27,27 +27,36 @@
         
         <label style="font-size:larger; font-weight:bold;">Munchie's Meats</label>
         
-        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" >  Bacon </b><input type="checkbox"><b>1/4L</b></input>
-        <input type="checkbox">1/2L</input><input type="checkbox">1L</input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder; ; margin:6 0;"height: 32px;></input><br>
-
-        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" > Carne de res lomo  </b><input type="checkbox">1/4L</input>
-        <input type="checkbox">1/2L</input><input type="checkbox">1L</input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder ; margin:6 0; height: 32px;"></input>  </input><br>
+        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" >  Bacon </b><br>
+        <div class="peso_carnes"><input type="checkbox"><b> 1/4L</b></input><input type="checkbox"><b> 1/2L</b> </input><input type="checkbox"><b> 1L </b></input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder; ; margin:6 0;"height: 32px;></input></div>
+<!-- 
+style        
+.peso_carnes b {
+margin: 19px;
+} -->
+        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" > Carne de res lomo </b>
+        <div class="peso_carnes"> <input type="checkbox"><b> 1/4L</b></input>
+        <input type="checkbox"><b> 1/2L</b> </input><input type="checkbox"><b> 1L </b></input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder ; margin:6 0; height: 32px;"></input>  </input></div>
         
 
-        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" > Carne de cerdo lomo  </b><input type="checkbox">1/4L</input>
-        <input type="checkbox">1/2L</input><input type="checkbox">1L</input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder ; margin:6 0; height: 32px;"></input>  </input><br>
+        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" > Carne de cerdo lomo  </b><br>
+        <div class="peso_carnes"> <input type="checkbox"><b> 1/4L</b></input>
+        <input type="checkbox"><b> 1/2L</b> </input><input type="checkbox"><b> 1L </b></input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder ; margin:6 0; height: 32px;"></input>  </input></div>
         
 
-        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" >  punta de anca </b><input type="checkbox">1/4L</input>
-        <input type="checkbox">1/2L</input><input type="checkbox">1L</input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder;  margin:6 0; height: 32px;"></input>  </input><br>
+        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" >  punta de anca </b> <div class="peso_carnes">
+        <input type="checkbox"><b> 1/4L</b></input>
+        <input type="checkbox"><b> 1/2L</b> </input><input type="checkbox"><b> 1L </b></input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder;  margin:6 0; height: 32px;"></input>  </input></div>
         
 
-        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" > steak  </b><input type="checkbox">1/4L</input>
-        <input type="checkbox">1/2L</input><input type="checkbox">1L</input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder;  margin:6 0; height: 32px;"></input>  </input><br>
+        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" > steak  </b> 
+        <div class="peso_carnes"> <input type="checkbox"><b> 1/4L</b></input>
+        <input type="checkbox"><b> 1/2L</b> </input><input type="checkbox"><b> 1L </b></input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder;  margin:6 0; height: 32px;"></input></input></div>
         
 
-        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" >  Otra </b><input type="checkbox">1/4L</input>
-        <input type="checkbox">1/2L</input><input type="checkbox">1L</input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder; margin:6 0; height: 32px;"></input> </input>
+        <input class="input__form_checkBox" type="checkbox">  <b class="input__form_tipoDeCarne" >  Otra </b><br>
+        <div class="peso_carnes"><input type="checkbox"><b> 1/4L</b></input>
+        <input type="checkbox"><b> 1/2L</b> </input><input type="checkbox"><b> 1L </b></input> <b>Q</b><input type="number" style="width: 64px; font-size: larger; color: black; font-weight: bolder; margin:6 0; height: 32px;"></input> </input></div>
 </div>
 </fieldset>
 
