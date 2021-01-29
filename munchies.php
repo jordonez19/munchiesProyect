@@ -105,8 +105,9 @@ $errors= array(
                 <li><img src="images\img6.jpeg" class="img__slider">    </li>
             </ul>
         </div>
-        <div class="title__menunchies_h1"> <h1>MENUNCHIE'S</h1></div>
+
         <!-- MENUNCHIES -->
+        <div class="title__menunchies_h1"> <h1>MENUNCHIE'S!!</h1></div>
         <div class="container__model_menunchies"><?php include 'modelos\menunchies.php';  ?></div>
         <!-- IMAGEN LOGO DE FONDO -->
         <div class="img__logo_container"><img src="images\logo.jpeg" class="imagen_logo"alt=""></div>
