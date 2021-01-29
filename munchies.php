@@ -1,5 +1,4 @@
 <?php 
-
 /* VARIABLES DE ARRAYS  (LABEL Y ERROR)....*/
 $labels = array(
                 "email"=>"",
@@ -62,13 +61,10 @@ $errors= array(
     }      
         
 //END OF THE POST
-
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -89,8 +85,6 @@ $errors= array(
 
 <body >
     <div id="container">
-        <!-- BARRA DESPLEGABLE -->
-        <?php include 'modelos\navbar.php';  ?>
         <!-- HEADER -->
         <?php include 'modelos\header.php';  ?>
         <button class="button__push_here"></button>
@@ -105,21 +99,25 @@ $errors= array(
                 <li><img src="images\img6.jpeg" class="img__slider">    </li>
             </ul>
         </div>
-
+        
         <!-- MENUNCHIES -->
         <div class="title__menunchies_h1"> <h1>MENUNCHIE'S!!</h1></div>
         <div class="container__model_menunchies"><?php include 'modelos\menunchies.php';  ?></div>
+
         <!-- IMAGEN LOGO DE FONDO -->
         <div class="img__logo_container"><img src="images\logo.jpeg" class="imagen_logo"alt=""></div>
+
         <!-- TITULO MUNCHIE'S COSTADO IZQUIERDO  -->
         <div class="title__munchies" ><h1>M <br> U<br>N<br>C<br>H<br>I<br>E<br>"<br>S</h1></div>
+
         <!-- TITULO MUNCHIE'S COSTADO DERECHO  -->
         <div class="title__munchies_2 flipH" ><h1>M <br> U<br>N<br>C<br>H<br>I<br>E<br>"<br>S</h1></div>
+
         <!-- FORM CLIENTE -->
         <div class="form__container__first">  <?php   include 'modelos\form.php';  ?> </div>
+
         <!-- FOOTER -->
         <div id="container__footer_b"> <?php include 'modelos\footer.php'; ?> </div>
-
         <div class="copyright">Copyright: Javier OP</div><br><br><br><br>
 
     </div>
