@@ -1,4 +1,3 @@
-
 <!-- NAVBAR -->
 <?php include 'modelos\navbar.php';  ?>
 <!-- TITULO MUNCHIE'S-SMOKED MEAT DENTRO DE CONTAINER -->

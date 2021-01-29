@@ -34,7 +34,7 @@ $errors= array(
                 $errors["nombre"] = "<br> Nombre solo debe ser letras y espacios!! <br>";
             }
         }
-    }
+    
 
     /* CHECK TELEFONO */    
     $labels["telefono"] = " *Escriba su telefono* <br>"; 
@@ -58,8 +58,14 @@ $errors= array(
         }else{
             $errors["ingredientes"] = "Por favor ponga ingredientes separados de commas"; 
         }
-    }      
-        
+    }
+    if(array_filter($errors)){
+    }else{
+        header("location: index.php");
+    }
+
+}      
+
 //END OF THE POST
 ?>
 
@@ -74,13 +80,17 @@ $errors= array(
     <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <!-- STYLES -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/css.css">
     <!-- ICONO PAGE -->    
     <link rel="icon" href="images\logo.jpeg">
     <title>Monchie's</title>
     <!-- SCRIPTS -->
-    <script src="https://kit.fontawesome.com/eda781d397.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://kit.fontawesome.com/eda781d397.js" crossorigin="anonymous"></script>
 </head>
 
 <body >
@@ -88,6 +98,7 @@ $errors= array(
         <!-- HEADER -->
         <?php include 'modelos\header.php';  ?>
         <button class="button__push_here"></button>
+
         <!-- IMAGENES -->
         <div class="slider">
             <ul>
@@ -118,7 +129,6 @@ $errors= array(
 
         <!-- FOOTER -->
         <div id="container__footer_b"> <?php include 'modelos\footer.php'; ?> </div>
-        <div class="copyright">Copyright: Javier OP</div><br><br><br><br>
 
     </div>
 </body>
