@@ -3,8 +3,8 @@
 <div class="footer__container">
 
     <ul class="footer__container_ul">
-    <li class="footer__container_li list-inline-item">
-            <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/consulvete.ikigai.3" >
+        <li class="footer__container_li list-inline-item">
+                <a class="btn-floating btn-fb mx-1" href="https://www.facebook.com/consulvete.ikigai.3" >
             <i class="fab fa-facebook-f"> </i> 
             </a>
         </li>

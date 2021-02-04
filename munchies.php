@@ -1,4 +1,20 @@
 <?php 
+if(isset($_POST["submit"])){
+    $conn = mysqli_connect("localhost", "javier", "ninja_pizza", "munchies");
+    if (!$conn) {
+            echo "error conection" . mysqli_connect_error();
+    }
+    /* QUERY PARA CARNES */
+    $timestamp = date("Y-m-d H:i:s");
+    $sql = 'INSERT INTO ordenes values(null, "'.$_POST["nombre"].'", "'.$_POST["telefono"].'", "direccion", "'.$timestamp.'", 22000 ,"'.$timestamp.'")';
+    mysqli_query($conn, $sql);
+    $id = mysqli_insert_id($conn);
+    foreach($_POST['orden'] as $presentacion_id => $cantidad){
+        $sql = 'INSERT INTO orden_productos values(null,  '.$presentacion_id.', '.$cantidad.', '.$id.')';
+        mysqli_query($conn, $sql);
+    }
+}
+
 /* VARIABLES DE ARRAYS  (LABEL Y ERROR)....*/
 $labels = array(
                 "email"=>"",
@@ -10,6 +26,7 @@ $errors= array(
                 "nombre" =>"",
                 "telefono"=>"",
                 "ingredientes"=>"");
+
 
 /* OBTENIENDO DATOS FORM */
     if(isset($_POST["submit"])){
@@ -35,7 +52,6 @@ $errors= array(
             }
         }
     
-
     /* CHECK TELEFONO */    
     $labels["telefono"] = " *Escriba su telefono* <br>"; 
     if(empty($_POST["telefono"])){
@@ -64,40 +80,19 @@ $errors= array(
         header("location: index.php");
     }
 
-}      
+
+
+}//FINAL ISSET
+
+
 
 //END OF THE POST
 ?>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--NO CACHE -->
-    <meta http-equiv="Expires" content="0">
-    <meta http-equiv="Last-Modified" content="0">
-    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
-    <meta http-equiv="Pragma" content="no-cache">
-    <!-- STYLES -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/css.css">
-    <!-- ICONO PAGE -->    
-    <link rel="icon" href="images\logo.jpeg">
-    <title>Monchie's</title>
-    <!-- SCRIPTS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <script src="https://kit.fontawesome.com/eda781d397.js" crossorigin="anonymous"></script>
-</head>
 
-<body >
-    <div id="container">
+    <div id="body__container">
         <!-- HEADER -->
         <?php include 'modelos\header.php';  ?>
-        <button class="button__push_here"></button>
 
         <!-- IMAGENES -->
         <div class="slider">
